@@ -12,6 +12,11 @@ Limiting framerate to ~60 frames/sec
 292 frames in 5.0 seconds = 58.394 FPS
 ```
 
+**Setup**
+```
+sudo apt install x11-dev libx11-dev libgl-dev libglew-dev libglu-dev libxext-dev
+```
+
 tl;dr; If you're seeing very slow framerates running glxgears or similar against VcXsrv there's a 
 chance the client is simply overwhelming the server with network traffic and the server simply buckles under
 all of that load and never gets around to actually drawing anything. Limiting the rate at which the client 
